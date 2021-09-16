@@ -1,6 +1,40 @@
 ﻿using System;
 using System.Globalization;
 
+//// Deklarera variabler
+//// Add deklarera en variable "paxar" plats i minnet för den variabeln
+//int y;
+//// Vi kan deklarera och tilldela en variabel på samma rad
+//int x = 5;
+//// Vi kan ha olika datatyper
+//uint x2 = 5;
+
+//string myString = "abc";
+
+//// Med "var" får variabeln den typ som värdet till höger om likamedtecknet
+//var myVar = 5.0;
+//// Vi kan inte deklarera en variabel med "var" utan att tilldela ett värde
+////var myVar2;
+
+//var myVar3 = 2.0m;
+
+//// Vi kan öka läsbarheten av stora värden genom att lägga till "_"
+//int myVar4 = 1_000_000;
+//double myVar5 = 1_0___0__0_00__________0.0;
+
+//// Vi kan tvinga ett värde att bli en viss typ
+//float myFloat = 2.0F;
+
+//// Vi kan ange värden i 2-bas
+//int myBinaryInt = 0b00001100;
+//Console.WriteLine(myBinaryInt);
+
+//// Vi kan ange värden i 16-bas
+//int myHexInt = 0x7B;
+
+
+
+//// Matte
 //Console.WriteLine(2 + 3);
 
 //int x = 4 * 3;
