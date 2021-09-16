@@ -1,137 +1,127 @@
 ﻿using System;
 using System.Globalization;
 
+//Console.WriteLine(2 + 3);
 
-namespace CsGrunder
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            //Console.WriteLine(2 + 3);
+//int x = 4 * 3;
+//Console.WriteLine(x);
 
-            //int x = 4 * 3;
-            //Console.WriteLine(x);
+//Console.WriteLine(2 + 3 * 4);
+//Console.WriteLine((2 + 3) * 4);
 
-            //Console.WriteLine(2 + 3 * 4);
-            //Console.WriteLine((2 + 3) * 4);
+//// Modulus (%) ger oss resten efter division
+//Console.WriteLine(3 % 2);
+//Console.WriteLine(5 % 3);
 
-            //// Modulus (%) ger oss resten efter division
-            //Console.WriteLine(3 % 2);
-            //Console.WriteLine(5 % 3);
+//// Componet assigmnent
+//int x = 1;
+//x = x + 2;
+//x += 2;
+//Console.WriteLine(x);
 
-            //// Componet assigmnent
-            //int x = 1;
-            //x = x + 2;
-            //x += 2;
-            //Console.WriteLine(x);
+//double y = 1.2;
+//y /= 0.1;
+//Console.WriteLine(y);
 
-            //double y = 1.2;
-            //y /= 0.1;
-            //Console.WriteLine(y);
+//int x = 1;
+//Console.WriteLine(x++);
+//Console.WriteLine(++x);
 
-            //int x = 1;
-            //Console.WriteLine(x++);
-            //Console.WriteLine(++x);
-
-            //Console.WriteLine(x--);
-            //Console.WriteLine(--x);
+//Console.WriteLine(x--);
+//Console.WriteLine(--x);
 
 
 
-            //// Type casting
-            //Console.WriteLine(3 / 2);
+//// Type casting
+//Console.WriteLine(3 / 2);
 
-            //long x = 1;
-            //int y = (int)1L;
-            //Console.WriteLine(y);
-            //long y3 = 21474836479;
-            //int y2 = (int)y3;
-            //Console.WriteLine(y2);
+//long x = 1;
+//int y = (int)1L;
+//Console.WriteLine(y);
+//long y3 = 21474836479;
+//int y2 = (int)y3;
+//Console.WriteLine(y2);
 
-            //float x = 1.9f;
-            //int y = (int)x;
-            //Console.WriteLine(y);
+//float x = 1.9f;
+//int y = (int)x;
+//Console.WriteLine(y);
 
-            //int x = 0;
-            //Console.WriteLine(5 / x); // int-division med 0 ger fel
+//int x = 0;
+//Console.WriteLine(5 / x); // int-division med 0 ger fel
 
-            //Console.WriteLine(5.0 / 0.0); // flyttal-division med 0 ger oändligheten
+//Console.WriteLine(5.0 / 0.0); // flyttal-division med 0 ger oändligheten
 
-            //// Notera vilken typ e-variablerna får när vi adderar
-            //// olika typer
-            //var e = 1 + 1L;
-            //var e2 = 1.0 + 1;
-            //var e3 = 3 / 2.0;
-            //int myValue = 123;
-            //var e4 = myValue / 2.0;
-            //var e5 = "String" + 2;
-            //var e6 = "String " + (10 + 20);
-
-
-            //// Overflow
-            //Console.WriteLine(int.MaxValue);
-            //Console.WriteLine(long.MaxValue);
-
-            //int x = 1;
-            //Console.WriteLine(int.MaxValue + x);
-
-            //uint x2 = 1;
-            //Console.WriteLine(uint.MaxValue + x2);
+//// Notera vilken typ e-variablerna får när vi adderar
+//// olika typer
+//var e = 1 + 1L;
+//var e2 = 1.0 + 1;
+//var e3 = 3 / 2.0;
+//int myValue = 123;
+//var e4 = myValue / 2.0;
+//var e5 = "String" + 2;
+//var e6 = "String " + (10 + 20);
 
 
-            //// Convert strings
-            //Console.WriteLine(Convert.ToInt32("123"));
-            //Console.WriteLine(Convert.ToDouble("12,3"));
-            //Console.WriteLine(Convert.ToDouble("12.3", CultureInfo.GetCultureInfo("en-US")));
+//// Overflow
+//Console.WriteLine(int.MaxValue);
+//Console.WriteLine(long.MaxValue);
 
-            //Console.WriteLine(int.Parse("123"));
-            //Console.WriteLine(double.Parse("123,45"));
+//int x = 1;
+//Console.WriteLine(int.MaxValue + x);
+
+//uint x2 = 1;
+//Console.WriteLine(uint.MaxValue + x2);
 
 
-            //// Building strings
-            //// Hur skriver vi specialtecken i strängar?
-            //string x = "abc \"hej\" \\";
-            //Console.WriteLine(x);
-            //Console.WriteLine("a\tb\nc");
+//// Convert strings
+//Console.WriteLine(Convert.ToInt32("123"));
+//Console.WriteLine(Convert.ToDouble("12,3"));
+//Console.WriteLine(Convert.ToDouble("12.3", CultureInfo.GetCultureInfo("en-US")));
 
-            //// Vi kan addera strängar men det kan bli svårläst
-            //string x2 = "hej " + "då";
+//Console.WriteLine(int.Parse("123"));
+//Console.WriteLine(double.Parse("123,45"));
 
-            //string myStr = "hej";
-            //int myInt = 123;
-            //double myDouble = 12.34;
 
-            //// String composition
-            //Console.WriteLine("{0} {1}", myStr, myInt);
-            //Console.WriteLine("{1} {0} {0} {0}", myStr, myInt);
+//// Building strings
+//// Hur skriver vi specialtecken i strängar?
+//string x = "abc \"hej\" \\";
+//Console.WriteLine(x);
+//Console.WriteLine("a\tb\nc");
 
-            //// String interpolation
-            //Console.WriteLine($"{myStr} {myInt}");
-            //Console.WriteLine($"{myInt} {myStr} {myStr} {myStr}");
+//// Vi kan addera strängar men det kan bli svårläst
+//string x2 = "hej " + "då";
 
-            //// String justify & format
-            //Console.WriteLine("{0,10}", myInt);
-            //Console.WriteLine("{0,-10}", myInt);
+//string myStr = "hej";
+//int myInt = 123;
+//double myDouble = 12.34;
 
-            //Console.WriteLine("{0,-10} {1, 5}", 12, 12.34);
-            //Console.WriteLine("{0,-10} {1, 5}", 120, 123.34);
-            //Console.WriteLine("{0,-10} {1, 5}", 547, 1992.1);
-            //Console.WriteLine("{0,-10} {1, 5}", 547_123_123_12, 1992.1);
+//// String composition
+//Console.WriteLine("{0} {1}", myStr, myInt);
+//Console.WriteLine("{1} {0} {0} {0}", myStr, myInt);
 
-            //Console.WriteLine("{0:N1} {1:C}", 12, 12.34);
+//// String interpolation
+//Console.WriteLine($"{myStr} {myInt}");
+//Console.WriteLine($"{myInt} {myStr} {myStr} {myStr}");
 
-            //Console.WriteLine("{0,10:N1}", 12);
-            //Console.WriteLine("{0,10:N1}", 1234);
-            //Console.WriteLine("{0,10:N1}", 123456);
+//// String justify & format
+//Console.WriteLine("{0,10}", myInt);
+//Console.WriteLine("{0,-10}", myInt);
 
-            //string myFormattedString = string.Format(CultureInfo.GetCultureInfo("en-US"), "{0:C}", 34.21);
-            //Console.WriteLine("myFormattedString: " + myFormattedString);
+//Console.WriteLine("{0,-10} {1, 5}", 12, 12.34);
+//Console.WriteLine("{0,-10} {1, 5}", 120, 123.34);
+//Console.WriteLine("{0,-10} {1, 5}", 547, 1992.1);
+//Console.WriteLine("{0,-10} {1, 5}", 547_123_123_12, 1992.1);
 
-            //double myFormatableDouble = 2344.432;
-            //Console.WriteLine(myFormatableDouble.ToString("F1"));
+//Console.WriteLine("{0:N1} {1:C}", 12, 12.34);
 
-            //Console.WriteLine($"{myStr,10} {myInt,-10}");
-        }
-    }
-}
+//Console.WriteLine("{0,10:N1}", 12);
+//Console.WriteLine("{0,10:N1}", 1234);
+//Console.WriteLine("{0,10:N1}", 123456);
+
+//string myFormattedString = string.Format(CultureInfo.GetCultureInfo("en-US"), "{0:C}", 34.21);
+//Console.WriteLine("myFormattedString: " + myFormattedString);
+
+//double myFormatableDouble = 2344.432;
+//Console.WriteLine(myFormatableDouble.ToString("F1"));
+
+//Console.WriteLine($"{myStr,10} {myInt,-10}");
