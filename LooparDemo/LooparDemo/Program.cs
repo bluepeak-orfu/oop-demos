@@ -42,3 +42,27 @@
 //        break;
 //    }
 //}
+
+//// Use break to exit forever running loop.
+//// Can be used as main program loop to keep program
+//// running indefinitely until user wants to exit.
+//while (true)
+//{
+//    string input = Console.ReadLine();
+
+//    if (input == "")
+//    {
+//        break;
+//    }
+
+//    Console.WriteLine($"Input was: {input}");
+//}
+
+//// Do-while loop
+//string input;
+//do
+//{
+//    input = Console.ReadLine();
+
+//    Console.WriteLine($"Input was: {input}");
+//} while (input != "");
