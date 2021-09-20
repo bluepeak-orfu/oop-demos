@@ -68,3 +68,11 @@ int[,] myTwoDimArray3 = new[,] { { 2, 3 } };
 Console.WriteLine($"myTwoDimArray3: {myTwoDimArray3[0, 0]} | {myTwoDimArray3[0, 1]}");
 
 int[,] myTwoDimArray4 = new[,] { { 2, 3, 4 }, { 5, 6, 7 } };
+
+for (int i = 0; i < myTwoDimArray4.GetLength(0); i++)
+{
+    for (int j = 0; j < myTwoDimArray4.GetLength(1); j++)
+    {
+        Console.WriteLine($"myTwoDimArray4: {myTwoDimArray4[i, j]}");
+    }
+}
