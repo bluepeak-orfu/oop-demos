@@ -10,14 +10,17 @@ namespace RepetitionVecka6.AbstraktDemo2
     {
         public void Eat(Fruit fruit)
         {
-            if (fruit.Name == "mango")
-            {
-                Console.WriteLine("The fruit tastes sweet");
-            }
-            else if (fruit.Name == "lemon")
-            {
-                Console.WriteLine("The fruit tastes sour");
-            }
+            string fruitTaste = fruit.Taste;
+            Console.WriteLine($"The fruit tastes {fruitTaste}");
+
+            //if (fruit.Name == "mango")
+            //{
+            //    Console.WriteLine("The fruit tastes sweet");
+            //}
+            //else if (fruit.Name == "lemon")
+            //{
+            //    Console.WriteLine("The fruit tastes sour");
+            //}
         }
     }
 }

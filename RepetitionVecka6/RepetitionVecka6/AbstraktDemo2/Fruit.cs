@@ -9,5 +9,6 @@ namespace RepetitionVecka6.AbstraktDemo2
     abstract class Fruit
     {
         public string Name { get; init; }
+        public abstract string Taste { get; }
     }
 }

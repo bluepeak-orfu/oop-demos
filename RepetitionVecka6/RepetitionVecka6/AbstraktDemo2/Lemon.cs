@@ -12,5 +12,13 @@ namespace RepetitionVecka6.AbstraktDemo2
         {
             Name = "lemon";
         }
+
+        public override string Taste
+        {
+            get
+            {
+                return "sour";
+            }
+        }
     }
 }
