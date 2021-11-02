@@ -56,7 +56,10 @@ namespace FilesDemo
             //demo.ReadFromStream();
             //demo.ReadFromStreamWithUsing();
             //demo.PrintAllContent();
-            demo.WriteContent(new string[] { "QQQQ", "WWWW", "EEEE" });
+            //demo.WriteContent(new string[] { "QQQQ", "WWWW", "EEEE" });
+
+            Navigate nav = new Navigate();
+            nav.Demo();
         }
     }
 }
